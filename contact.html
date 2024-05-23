@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Texas A&M Water Ski Team - Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="contactHeader">
+            <nav>
+                <a href="index.html"><img src="header/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" style="margin-top: 10px; font-size: 30px;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" style="margin-top: 0px;" onclick="showMenu()"></i>
+            </nav>
+        </section>
+
+        <section class="contact" onclick="hideMenu()">
+            <p><br></p>
+            <h1>Contact Us</h1>
+            <p><br></p>
+            <p>You can get ahold of us by emailing one of the officers below, emailing us at <a href="mailto: texasamwaterski@gmail.com" 
+                class="contact-btn">texasamwaterski@gmail.com</a>, or joining our potential skiers <a 
+                href="https://groupme.com/join_group/95599027/mkyDvLlk">GroupMe</a>. You can also follow our Instagram <a 
+                href="https://www.instagram.com/aggiewaterski/">@aggiewaterski</a> or our Facebook <a 
+                href="https://www.facebook.com/tamuwaterski/" class="contact-btn">@Texas A&M Waterski Club</a> where we will be posting 
+                our meeting times throughout the semester!</p>
+            <p><br></p>
+            <p><br></p>
+        </section>
+
+        <section class="leadership" onclick="hideMenu()">
+            <h1>2024-2025 Officer Team</h1>
+            <div class="officers">
+                <div class="president">
+                    <h2>President</h2>
+                    <img src="officers/president.jpg" class="president-img">
+                    <h3>Alec Helzer</h3>
+                    <p><a href="mailto: ahelzer@tamu.edu">ahelzer@tamu.edu</a></p>
+                </div>
+                <div class="vice_president">
+                    <h2>Vice President</h2>
+                    <img src="officers/vice_president.jpg" class="vice_president-img">
+                    <h3>Jacob Fisk</h3>
+                    <p><a href="mailto: jacob_fisk1407@tamu.edu">jacob_fisk1407@tamu.edu</a></p>
+                </div>
+                <div class="treasurer">
+                    <h2>Treasurer</h2>
+                    <img src="officers/treasurer.jpg" class="treasurer-img">
+                    <h3>Brandon Thomas</h3>
+                    <p><a href="mailto: bat2492@tamu.edu">bat2492@tamu.edu</a></p>
+                </div>
+                <div class="captain">
+                    <h2>Captain</h2>
+                    <img src="officers/captain.jpg" class="captain-img">
+                    <h3>Hanna Larson</h3>
+                    <p><a href="mailto: dontknowemail@tamu.edu">dontknowemail@tamu.edu</a></p>
+                </div>
+                <div class="secretary">
+                    <h2>Secretary</h2>
+                    <img src="officers/secretary.jpg" class="secretary-img">
+                    <h3>Ellie Boll</h3>
+                    <p><a href="mailto: eboll5@tamu.edu">eboll5@tamu.edu</a></p>
+                </div>
+            </div>
+            <p><br></p>
+            <p><br></p>
+        </section>
+
+        <section class="footer" onclick="hideMenu()">
+            <h4>Connect With Us</h4>
+            <div class="icons">
+                <a href="mailto: texasamwaterski@gmail.com"><img src="icons/email.png"></a>
+                <a href="https://groupme.com/join_group/95599027/mkyDvLlk"><img src="icons/groupme.png"></a>
+                <a href="https://www.instagram.com/aggiewaterski/"><img src="icons/instagram.png"></a>
+                <a href="https://www.facebook.com/tamuwaterski/"><img src="icons/facebook.png"></a>
+            </div>
+            <p>Copyright &copy; 2024 Texas A&M Water Ski Team. All Rights Reserved.</p>
+        </section>
+
+        <script>
+            let navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.display = "block";
+            }
+            function hideMenu() {
+                navLinks.style.display = "none";
+            }
+            window.addEventListener("resize", function() {
+                if (window.innerWidth > 1000) {
+                    navLinks.style.display = "block";
+                }
+            });
+        </script>
+
+        <button id="backToTop" title="Back to Top">&uarr;</button>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let backToTopButton = document.getElementById("backToTop");
+                window.onscroll = function() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        backToTopButton.style.display = "block";
+                    }
+                    else {
+                        backToTopButton.style.display = "none";
+                    }
+                };
+                backToTopButton.addEventListener("click", () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                });
+            });
+        </script>
+
+    </body>
+</html>
